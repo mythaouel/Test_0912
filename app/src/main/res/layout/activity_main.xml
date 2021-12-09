@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:padding="10dp">
+    >
 
     <ScrollView
         android:layout_width="match_parent"
@@ -14,11 +14,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="10dp">
             <ImageView
                 android:id="@+id/imvBanner"
                 android:layout_width="match_parent"
-                android:layout_marginTop="10dp"
                 android:layout_height="200dp"
                 android:src="@drawable/advertise_banner"/>
             <LinearLayout
@@ -89,16 +89,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:weightSum="2"
+
                     >
                     <ImageView
                         android:layout_width="0dp"
-                        android:layout_height="100dp"
+                        android:layout_height="90dp"
                         android:layout_weight="1"
                         android:src="@drawable/tocotoco_promo"
                         />
                     <ImageView
                         android:layout_width="0dp"
-                        android:layout_height="100dp"
+                        android:layout_height="90dp"
                         android:layout_weight="1"
                         android:src="@drawable/share_tea_promo"
                         />
@@ -110,13 +111,13 @@
                     android:layout_marginTop="10dp">
                     <ImageView
                         android:layout_width="0dp"
-                        android:layout_height="100dp"
+                        android:layout_height="90dp"
                         android:layout_weight="1"
                         android:src="@drawable/comebuy_promo"
                         />
                     <ImageView
                         android:layout_width="0dp"
-                        android:layout_height="100dp"
+                        android:layout_height="90dp"
                         android:layout_weight="1"
                         android:src="@drawable/chaosuon_promo"
                         />
