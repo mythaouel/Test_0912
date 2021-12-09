@@ -4,13 +4,15 @@ public class Product {
     private int pdThumb;
     private String pdName;
     private String pdAddress;
+    private String pdDesciption;
     private double pdRate;
     private int pdCount;
 
-    public Product(int pdThumb, String pdName, String pdAddress, double pdRate, int pdCount) {
+    public Product(int pdThumb, String pdName, String pdAddress, String pdDesciption, double pdRate, int pdCount) {
         this.pdThumb = pdThumb;
         this.pdName = pdName;
         this.pdAddress = pdAddress;
+        this.pdDesciption = pdDesciption;
         this.pdRate = pdRate;
         this.pdCount = pdCount;
     }
@@ -19,7 +21,7 @@ public class Product {
         return pdThumb;
     }
 
-    public void setPdThhumb(int pdThumb) {
+    public void setPdThumb(int pdThumb) {
         this.pdThumb = pdThumb;
     }
 
@@ -37,6 +39,14 @@ public class Product {
 
     public void setPdAddress(String pdAddress) {
         this.pdAddress = pdAddress;
+    }
+
+    public String getPdDesciption() {
+        return pdDesciption;
+    }
+
+    public void setPdDesciption(String pdDesciption) {
+        this.pdDesciption = pdDesciption;
     }
 
     public double getPdRate() {
