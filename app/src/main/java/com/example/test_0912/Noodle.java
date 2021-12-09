@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class Noodle extends AppCompatActivity {
 
     ImageView imgBack;
-    ListView lvProduct;
+    ListView lvProduct1;
     ProductAdapter adapter;
     ArrayList<Product> productArrayList;
     @Override
@@ -39,9 +39,9 @@ public class Noodle extends AppCompatActivity {
 
     private void linkViews() {
         imgBack = findViewById(R.id.imgback);
-        lvProduct = findViewById(R.id.lvProduct);
+        lvProduct1 = findViewById(R.id.lvProduct1);
         productArrayList = new ArrayList<>();
         adapter = new ProductAdapter(Noodle.this, R.layout.custom_item, productArrayList);
-        lvProduct.setAdapter(adapter);
+        lvProduct1.setAdapter(adapter);
     }
 }
