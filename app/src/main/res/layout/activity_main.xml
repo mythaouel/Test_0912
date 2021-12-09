@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,17 +18,111 @@
             <ImageView
                 android:id="@+id/imvBanner"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"/>
+                android:layout_marginTop="10dp"
+                android:layout_height="200dp"
+                android:src="@drawable/advertise_banner"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="9">
+                <ImageView
+                    android:id="@+id/imvLunchBox"
+                    android:layout_height="130dp"
+                    android:layout_width="0dp"
+                    android:src="@drawable/lunch_box_icon"
+                    android:layout_weight="3"/>
+                <ImageView
+                    android:id="@+id/imvNoodle"
+                    android:layout_height="130dp"
+                    android:layout_width="0dp"
+                    android:src="@drawable/noodle_icon"
+                    android:layout_weight="3"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/milk_tea_icon"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="9">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/snack_icon"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/korean_icon"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/healthy_icon"/>
+            </LinearLayout>
             <ImageView
-                android:id="@+id/imvLunchBox"
-                android:layout_height="130dp"
-                android:layout_width="130dp"
-                android:src="@drawable/lunch_box_icon"/>
-            <ImageView
-                android:id="@+id/imvNoodle"
-                android:layout_height="130dp"
-                android:layout_width="130dp"
-                android:src="@drawable/noodle_icon"/>
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/baemin_studio_banner"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:weightSum="2">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/momo_service"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/zalopay_service"/>
+            </LinearLayout>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    >
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/tocotoco_promo"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/share_tea_promo"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="10dp">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/comebuy_promo"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/chaosuon_promo"
+                        />
+                </TableRow>
+
+            </TableLayout>
 
 
 
