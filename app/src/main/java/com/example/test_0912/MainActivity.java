@@ -23,14 +23,16 @@ public class MainActivity extends AppCompatActivity {
         imvLunchBox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MainActivity.this,Lunch.class);
+                startActivity(intent);
             }
         });
 
         imvNoodle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MainActivity.this,Noodle.class);
+                startActivity(intent);
             }
         });
     }
